@@ -11,15 +11,15 @@ const MapboxComponent = () => {
   const mapContainerRef = useRef(null)
   const map = useRef(null)
 
-  const [lng] = useState(-97.7431)
-  const [lat] = useState(30.2672)
-  const [zoom] = useState(2)
+  const [lng] = useState(-7.63302)
+  const [lat] = useState(33.587241)
+  const [zoom] = useState(17)
 
   // Initialize map when component mounts
   useEffect(() => {
     map.current = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/standard',
       center: [lng, lat],
       zoom: zoom
     })
