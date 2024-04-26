@@ -6,6 +6,7 @@ import Home from './Home'
 import Typing from './Typing'
 import ApiFetcher from './ApiFetcher'
 import Test from './Test'
+import MapboxComponent from './MapboxComponent'
 const App = () => {
   return (
     <Router>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/typing" element={<Typing />} />
         <Route path="/fetchapi" element={<ApiFetcher />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/map" element={<MapboxComponent />} />
       </Routes>
     </Router>
   )
